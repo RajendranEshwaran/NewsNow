@@ -6,7 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".view.Home">
 
-<include layout="@layout/head_toolbar"/>
+    <include
+        android:id="@+id/include"
+        layout="@layout/head_toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/notnowTxt"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="notnowMethod"
+        android:text="NotNow"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/loginTxt"
+        android:layout_width="62dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="loginMethod"
+        android:text="LogIn"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="255dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="64dp"
+        android:text="Subscribe"
+        android:onClick="subscribeMethod"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Rest of content for the activity -->
 </android.support.constraint.ConstraintLayout>

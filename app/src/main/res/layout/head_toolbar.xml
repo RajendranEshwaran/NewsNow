@@ -2,6 +2,7 @@
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/toolbar_head"
     android:background="@android:color/background_light"
     android:minHeight="?attr/actionBarSize">
 
@@ -41,7 +42,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
                     android:gravity="end"
-                    android:text="test"
+                    android:text="Skip"
                     android:textColor="@android:color/holo_blue_dark"
                     android:textSize="20sp" />
         </RelativeLayout>
