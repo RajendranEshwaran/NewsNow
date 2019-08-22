@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Subscription"></activity>
+        <activity android:name=".view.Subscription" />
+        <activity android:name=".view.YourAlert"></activity>
     </application>
 
 </manifest>

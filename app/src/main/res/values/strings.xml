@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">NewsNow</string>
+    <string name="ch_subscription">Choose Subscription</string>
+    <string name="ch_plan">Choose plan to have an access on desktop,tablet and mobile</string>
+    <string name="standard">Standard\n $16/month </string>
+    <string name="bussiness">Bussiness\n $32/month </string>
+    <string name="premium">Premium\n $64/month </string>
+    <string name="personalalert">Personalize Your\n Alert</string>
+    <string name="stayknow">Stay in the Know. Get notifications\n when important news unfold</string>
+    <string name="notify1">Breaking\nNews\n1-2 in Day</string>
+    <string name="notify2">Only top\n stories\n3-6 in day</string>
+    <string name="notify3">Important\nNews\nmore 10</string>
+    <string name="notify4">Turn on Notifications</string>
+    <string name="notify5">Notification previows will be shown whether the\n phone is locked or unlocked. Show the alert on the lock\n Screen in the notification center</string>
+
 </resources>

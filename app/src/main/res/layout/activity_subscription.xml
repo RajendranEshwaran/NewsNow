@@ -4,8 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Subscription">
+    tools:context=".view.Subscription">
 
-    <include layout="@layout/head_toolbar"/>
+    <include
+        android:id="@+id/include2"
+        layout="@layout/head_toolbar" />
+
+    <TextView
+        android:id="@+id/subsTxt"
+        android:layout_width="250dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginRight="134dp"
+        android:layout_marginBottom="373dp"
+        android:text="@string/ch_subscription"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        tools:text="Choose Subscription"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/planTxt"
+        android:layout_width="381dp"
+        android:layout_height="44dp"
+        android:text="@string/ch_plan"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subsTxt" />
+
+    <Button
+        android:id="@+id/sub1Btn"
+        android:background="@drawable/buttonshape"
+        android:layout_width="246dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="29dp"
+        android:drawableRight="@drawable/checkbox"
+        android:text="@string/standard"
+        android:onClick="getSub1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planTxt" />
+
+    <Button
+        android:id="@+id/sub2Btn"
+        android:background="@drawable/buttonshape"
+        android:layout_width="246dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/bussiness"
+        android:drawableRight="@drawable/checkbox"
+        android:onClick="getSub2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub1Btn" />
+
+    <Button
+        android:id="@+id/sub3Btn"
+        android:layout_width="246dp"
+        android:background="@drawable/buttonshape"
+        android:layout_height="72dp"
+        android:layout_marginTop="19dp"
+        android:drawableRight="@drawable/checkbox"
+        android:layout_marginBottom="48dp"
+        android:text="@string/premium"
+        android:onClick="getSub3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub2Btn" />
 
 </android.support.constraint.ConstraintLayout>
