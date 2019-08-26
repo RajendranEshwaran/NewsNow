@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".view.Subscription">
 
+    <TextView
+        android:id="@+id/step1Txt2"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/step1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/subsTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:layout_constraintVertical_bias="0.0" />
+
     <include
         android:id="@+id/include2"
         layout="@layout/head_toolbar" />

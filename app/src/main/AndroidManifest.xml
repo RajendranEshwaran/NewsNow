@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.Subscription" />
-        <activity android:name=".view.YourAlert"></activity>
+        <activity android:name=".view.YourAlert" />
+        <activity android:name=".Your_Location"></activity>
     </application>
 
 </manifest>

@@ -12,5 +12,12 @@
     <string name="notify3">Important\nNews\nmore 10</string>
     <string name="notify4">Turn on Notifications</string>
     <string name="notify5">Notification previows will be shown whether the\n phone is locked or unlocked. Show the alert on the lock\n Screen in the notification center</string>
-
+    <string name="step1">STEP 1 OF 5</string>
+    <string name="step2">STEP 2 OF 5</string>
+    <string name="step3">STEP 3 OF 5</string>
+    <string name="step4">STEP 4 OF 5</string>
+    <string name="step5">STEP 5 OF 5</string>
+    <string name="chooseLoca">Choose\n a Location </string>
+    <string name="choseLocaTip">The local weather and news \n show for your country</string>
+    <string name="currentLoc">Your Location</string>
 </resources>

@@ -9,7 +9,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.rajendraneshwaran.newsnow.R;
+import com.rajendraneshwaran.newsnow.Your_Location;
 import com.rajendraneshwaran.newsnow.util.SlideTranslation;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Locale;
 
 public class Home extends AppCompatActivity {
 
@@ -30,11 +35,17 @@ public class Home extends AppCompatActivity {
         loginTxt = (TextView)findViewById(R.id.loginTxt);
         notnowTxt = (TextView)findViewById(R.id.notnowTxt);
 
+
+
     }
 
     public void subscribeMethod(View view)
     {
-        startActivity(new Intent(this, Subscription.class));
+//        startActivity(new Intent(this, Subscription.class));
+//        this.overridePendingTransition(R.anim.anim_slide_in_left,
+//                R.anim.anim_slide_out_left);
+
+        startActivity(new Intent(this, Your_Location.class));
         this.overridePendingTransition(R.anim.anim_slide_in_left,
                 R.anim.anim_slide_out_left);
     }
