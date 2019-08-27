@@ -47,4 +47,17 @@
         android:id="@+id/include5"
         layout="@layout/head_toolbar" />
 
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/topic_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        android:layout_marginTop="1dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topicTipTxt2" />
+
+
 </android.support.constraint.ConstraintLayout>

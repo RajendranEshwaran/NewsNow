@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.rajendraneshwaran.newsnow.ChooseTopic;
 import com.rajendraneshwaran.newsnow.R;
 import com.rajendraneshwaran.newsnow.Your_Location;
 import com.rajendraneshwaran.newsnow.util.SlideTranslation;
@@ -45,7 +46,7 @@ public class Home extends AppCompatActivity {
 //        this.overridePendingTransition(R.anim.anim_slide_in_left,
 //                R.anim.anim_slide_out_left);
 
-        startActivity(new Intent(this, Your_Location.class));
+        startActivity(new Intent(this, ChooseTopic.class));
         this.overridePendingTransition(R.anim.anim_slide_in_left,
                 R.anim.anim_slide_out_left);
     }
