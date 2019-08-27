@@ -4,9 +4,13 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.rajendraneshwaran.newsnow.model.countryinfo;
 import com.rajendraneshwaran.newsnow.viewmodel.CountryAdapter;
 
 import java.util.ArrayList;
@@ -22,6 +26,7 @@ public class Your_Location extends Activity {
     private ListView listView;
     private ProgressDialog dialog;
     private ArrayList<String> countries;
+    private TextView currLocTxt;
 
     private int pageCount = 0;
 
@@ -32,8 +37,22 @@ public class Your_Location extends Activity {
 
 
         listView = (ListView) findViewById(R.id.countryList);
+        currLocTxt = (TextView)findViewById(R.id.currentLocTxt);
+
         setListViewAdapter();
         listView.setOnScrollListener(onScrollListener());
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                currLocTxt.setText("");
+
+                String text = parent.getItemAtPosition(position).toString();
+                currLocTxt.setText(text);
+            }
+        });
     }
 
 

@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".view.Subscription" />
         <activity android:name=".view.YourAlert" />
-        <activity android:name=".Your_Location"></activity>
+        <activity android:name=".Your_Location" />
+        <activity android:name=".ChooseTopic"></activity>
     </application>
 
 </manifest>
