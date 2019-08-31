@@ -22,4 +22,6 @@
     <string name="currentLoc">Your Location</string>
     <string name="chooseTopic">Choose Topics</string>
     <string name="chooseTopicTip">Add topics to create your own personal news feed</string>
+    <string name="addTag">Add Tags to Your\n Personal Taglist</string>
+    <string name="addTagTip">Dont miss the actual news about the\n stuff you love the most</string>
 </resources>

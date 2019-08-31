@@ -19,7 +19,8 @@
         <activity android:name=".view.Subscription" />
         <activity android:name=".view.YourAlert" />
         <activity android:name=".Your_Location" />
-        <activity android:name=".ChooseTopic"></activity>
+        <activity android:name=".ChooseTopic" />
+        <activity android:name=".AddTag"></activity>
     </application>
 
 </manifest>

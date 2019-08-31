@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.rajendraneshwaran.newsnow.AddTag;
 import com.rajendraneshwaran.newsnow.ChooseTopic;
 import com.rajendraneshwaran.newsnow.R;
 import com.rajendraneshwaran.newsnow.Your_Location;
@@ -46,7 +47,7 @@ public class Home extends AppCompatActivity {
 //        this.overridePendingTransition(R.anim.anim_slide_in_left,
 //                R.anim.anim_slide_out_left);
 
-        startActivity(new Intent(this, ChooseTopic.class));
+        startActivity(new Intent(this, AddTag.class));
         this.overridePendingTransition(R.anim.anim_slide_in_left,
                 R.anim.anim_slide_out_left);
     }
